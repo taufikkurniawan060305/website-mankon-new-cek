@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum Manajemen Konstruksi</title>
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" data-aos="fade-down" data-aos-duration="800">
+        <div class="logo">
+            <i class="fa-solid fa-helmet-safety"></i>
+            <span>Manajemen Konstruksi</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#jadwal">Jadwal</a></li>
+            <li><a href="#unduhan">Unduhan</a></li>
+            <li><a href="#tutorial">Video Tutorial</a></li>
+            <li><a href="#profil">Profil</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content" data-aos="zoom-in" data-aos-duration="1200">
+            <h1>Pusat Informasi Praktikum</h1>
+            <h2 class="highlight">Manajemen Konstruksi</h2>
+            <h3 style="color: #CCD6F6; font-size: 1.2rem; font-weight: 400; margin-bottom: 1.5rem; letter-spacing: 0.5px;">Program Studi Teknik Sipil, Universitas Muhammadiyah Yogyakarta</h3>
+            <p>Portal resmi untuk segala kebutuhan praktikum Anda. Temukan jadwal, unduh format laporan, soal praktikum, dan pelajari video tutorial dalam satu tempat.</p>
+            <a href="#unduhan" class="btn-primary">Jelajahi Unduhan</a>
+        </div>
+    </section>
+
+    <!-- Jadwal Praktikum -->
+    <section id="jadwal" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Jadwal Praktikum</h2>
+                <p>Jadwal pelaksanaan modul praktikum Manajemen Konstruksi Semester Ganjil.</p>
+            </div>
+            <div class="schedule-container" data-aos="fade-up" data-aos-delay="100">
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Modul</th>
+                            <th>Materi Praktikum</th>
+                            <th>Tanggal</th>
+                            <th>Waktu</th>
+                            <th>Ruangan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Pengenalan Manajemen Konstruksi & Perhitungan RAB</td>
+                            <td>12 Sep 2026</td>
+                            <td>08:00 - 10:00</td>
+                            <td>Lab Komputer A</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Penjadwalan Proyek (Barchart & Kurva S)</td>
+                            <td>19 Sep 2026</td>
+                            <td>08:00 - 10:00</td>
+                            <td>Lab Komputer A</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Network Planning (CPM/PERT)</td>
+                            <td>26 Sep 2026</td>
+                            <td>08:00 - 10:00</td>
+                            <td>Lab Komputer B</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Aplikasi Microsoft Project Dasar</td>
+                            <td>03 Okt 2026</td>
+                            <td>08:00 - 10:00</td>
+                            <td>Lab Komputer A</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pusat Unduhan -->
+    <section id="unduhan" class="section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Pusat Unduhan (Resources)</h2>
+                <p>Unduh semua keperluan administrasi, soal, dan laporan praktikum Anda di sini.</p>
+            </div>
+            <div class="cards-grid">
+                <!-- Card 1 -->
+                <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-icon"><i class="fa-solid fa-file-signature"></i></div>
+                    <h3>Format Laporan</h3>
+                    <p>Aturan penulisan margin, jenis font, cover, dan struktur isi laporan praktikum.</p>
+                    <a href="#" class="btn-outline">Unduh Format</a>
+                </div>
+                <!-- Card 2 -->
+                <div class="card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-icon"><i class="fa-solid fa-file-pdf"></i></div>
+                    <h3>Contoh Laporan</h3>
+                    <p>Contoh laporan praktikum yang sudah dinilai (sebagai referensi penyusunan).</p>
+                    <a href="#" class="btn-outline">Unduh Contoh</a>
+                </div>
+                <!-- Card 3 -->
+                <div class="card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-icon"><i class="fa-solid fa-clipboard-question"></i></div>
+                    <h3>Soal Praktikum</h3>
+                    <p>Soal kasus konstruksi yang akan dibahas dan diselesaikan pada tiap modul.</p>
+                    <a href="#" class="btn-outline">Lihat Soal</a>
+                </div>
+                <!-- Card 4 -->
+                <div class="card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card-icon"><i class="fa-solid fa-file-excel"></i></div>
+                    <h3>Template Pengerjaan</h3>
+                    <p>Template hitungan RAB dan format tabel pengerjaan di Microsoft Excel.</p>
+                    <a href="#" class="btn-outline">Unduh Template</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Tutorial -->
+    <section id="tutorial" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Video Tutorial</h2>
+                <p>Pelajari materi secara mandiri melalui panduan video berikut sebelum masuk lab.</p>
+            </div>
+            <div class="video-grid">
+                <div class="video-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="video-thumbnail">
+                        <i class="fa-brands fa-youtube"></i>
+                        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=600&auto=format&fit=crop" alt="Tutorial RAB">
+                    </div>
+                    <div class="video-info">
+                        <h3>Modul 1: Menghitung RAB</h3>
+                        <p>Panduan dasar perhitungan Rencana Anggaran Biaya untuk bangunan sederhana.</p>
+                    </div>
+                </div>
+                <div class="video-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="video-thumbnail">
+                        <i class="fa-brands fa-youtube"></i>
+                        <img src="https://images.unsplash.com/photo-1541888081691-10c5513abebc?q=80&w=600&auto=format&fit=crop" alt="Tutorial Kurva S">
+                    </div>
+                    <div class="video-info">
+                        <h3>Modul 2: Pembuatan Kurva S</h3>
+                        <p>Cara membuat bobot pekerjaan dan menggambar Kurva S di Microsoft Excel.</p>
+                    </div>
+                </div>
+                <div class="video-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="video-thumbnail">
+                        <i class="fa-brands fa-youtube"></i>
+                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356f12?q=80&w=600&auto=format&fit=crop" alt="Tutorial MS Project">
+                    </div>
+                    <div class="video-info">
+                        <h3>Modul 4: Dasar MS Project</h3>
+                        <p>Cara menginput task, durasi, predecessor, dan resource di MS Project.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profil Dosen & Asisten -->
+    <section id="profil" class="section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Tim Pengajar</h2>
+                <p>Dosen Pengampu & Asisten Praktikum Manajemen Konstruksi.</p>
+            </div>
+            
+            <h3 class="sub-heading" data-aos="fade-up">Dosen Pengampu</h3>
+            <div class="profiles-grid">
+                <div class="profile-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="profile-img">
+                        <img src="https://ui-avatars.com/api/?name=Budi+Santoso&background=0A192F&color=FACC15&size=150" alt="Dosen">
+                    </div>
+                    <h4>Dr. Ir. Budi Santoso, M.T.</h4>
+                    <p>Dosen Koordinator Manajemen Konstruksi</p>
+                </div>
+            </div>
+
+            <h3 class="sub-heading" style="margin-top: 3rem;" data-aos="fade-up">Asisten Praktikum</h3>
+            <div class="profiles-grid asisten-grid">
+                <!-- Asisten 1 -->
+                <div class="profile-card" data-aos="fade-up" data-aos-delay="50">
+                    <div class="profile-img">
+                        <img src="https://ui-avatars.com/api/?name=Andrei+Ardheano+Pratama&background=FACC15&color=0A192F&size=150" alt="Andrei Ardheano Pratama">
+                    </div>
+                    <h4>Andrei Ardheano P.</h4>
+                    <p>NIM: 20230110051</p>
+                    <a href="https://wa.me/6285700293206?text=Assalamualaikum/Selamat%20Pagi/Siang/Sore,%20perkenalkan%20saya%20[Nama%20Anda],%20NIM%20[NIM%20Anda],%20dari%20Kelompok%20[No.%20Kelompok]%20angkatan%20[Tahun].%20Saya%20menghubungi%20terkait%20Praktikum%20Manajemen%20Konstruksi,%20Program%20Studi%20Teknik%20Sipil,%20Universitas%20Muhammadiyah%20Yogyakarta." target="_blank" class="btn-wa"><i class="fa-brands fa-whatsapp"></i> Chat Asisten</a>
+                </div>
+                <!-- Asisten 2 -->
+                <div class="profile-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="profile-img">
+                        <img src="https://ui-avatars.com/api/?name=Taufik+Akbar+Kurniawan&background=FACC15&color=0A192F&size=150" alt="Taufik Akbar Kurniawan">
+                    </div>
+                    <h4>Taufik Akbar K.</h4>
+                    <p>NIM: 20230110062</p>
+                    <a href="https://wa.me/6288225012939?text=Assalamualaikum/Selamat%20Pagi/Siang/Sore,%20perkenalkan%20saya%20[Nama%20Anda],%20NIM%20[NIM%20Anda],%20dari%20Kelompok%20[No.%20Kelompok]%20angkatan%20[Tahun].%20Saya%20menghubungi%20terkait%20Praktikum%20Manajemen%20Konstruksi,%20Program%20Studi%20Teknik%20Sipil,%20Universitas%20Muhammadiyah%20Yogyakarta." target="_blank" class="btn-wa"><i class="fa-brands fa-whatsapp"></i> Chat Asisten</a>
+                </div>
+                <!-- Asisten 3 -->
+                <div class="profile-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="profile-img">
+                        <img src="https://ui-avatars.com/api/?name=Akhmad+Alif&background=FACC15&color=0A192F&size=150" alt="Akhmad Alif">
+                    </div>
+                    <h4>Akhmad Alif</h4>
+                    <p>NIM: 20230110096</p>
+                    <a href="https://wa.me/6285725543384?text=Assalamualaikum/Selamat%20Pagi/Siang/Sore,%20perkenalkan%20saya%20[Nama%20Anda],%20NIM%20[NIM%20Anda],%20dari%20Kelompok%20[No.%20Kelompok]%20angkatan%20[Tahun].%20Saya%20menghubungi%20terkait%20Praktikum%20Manajemen%20Konstruksi,%20Program%20Studi%20Teknik%20Sipil,%20Universitas%20Muhammadiyah%20Yogyakarta." target="_blank" class="btn-wa"><i class="fa-brands fa-whatsapp"></i> Chat Asisten</a>
+                </div>
+                <!-- Asisten 4 -->
+                <div class="profile-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="profile-img">
+                        <img src="https://ui-avatars.com/api/?name=Gilang+Akbar&background=FACC15&color=0A192F&size=150" alt="Gilang Akbar">
+                    </div>
+                    <h4>Gilang Akbar</h4>
+                    <p>NIM: 20230110308</p>
+                    <a href="https://wa.me/6285943411338?text=Assalamualaikum/Selamat%20Pagi/Siang/Sore,%20perkenalkan%20saya%20[Nama%20Anda],%20NIM%20[NIM%20Anda],%20dari%20Kelompok%20[No.%20Kelompok]%20angkatan%20[Tahun].%20Saya%20menghubungi%20terkait%20Praktikum%20Manajemen%20Konstruksi,%20Program%20Studi%20Teknik%20Sipil,%20Universitas%20Muhammadiyah%20Yogyakarta." target="_blank" class="btn-wa"><i class="fa-brands fa-whatsapp"></i> Chat Asisten</a>
+                </div>
+                <!-- Asisten 5 -->
+                <div class="profile-card" data-aos="fade-up" data-aos-delay="250">
+                    <div class="profile-img">
+                        <img src="https://ui-avatars.com/api/?name=Rifqu+Ghinannafs+Ilsyahad&background=FACC15&color=0A192F&size=150" alt="Rifqu Ghinannafs Ilsyahad">
+                    </div>
+                    <h4>Rifqu Ghinannafs I.</h4>
+                    <p>NIM: 20230110294</p>
+                    <a href="https://wa.me/6285643819677?text=Assalamualaikum/Selamat%20Pagi/Siang/Sore,%20perkenalkan%20saya%20[Nama%20Anda],%20NIM%20[NIM%20Anda],%20dari%20Kelompok%20[No.%20Kelompok]%20angkatan%20[Tahun].%20Saya%20menghubungi%20terkait%20Praktikum%20Manajemen%20Konstruksi,%20Program%20Studi%20Teknik%20Sipil,%20Universitas%20Muhammadiyah%20Yogyakarta." target="_blank" class="btn-wa"><i class="fa-brands fa-whatsapp"></i> Chat Asisten</a>
+                </div>
+                <!-- Asisten 6 -->
+                <div class="profile-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="profile-img">
+                        <img src="https://ui-avatars.com/api/?name=Syifa+Aulia+Rahmani&background=FACC15&color=0A192F&size=150" alt="Syifa Aulia Rahmani">
+                    </div>
+                    <h4>Syifa Aulia R.</h4>
+                    <p>NIM: 20230110257</p>
+                    <a href="https://wa.me/6288802086808?text=Assalamualaikum/Selamat%20Pagi/Siang/Sore,%20perkenalkan%20saya%20[Nama%20Anda],%20NIM%20[NIM%20Anda],%20dari%20Kelompok%20[No.%20Kelompok]%20angkatan%20[Tahun].%20Saya%20menghubungi%20terkait%20Praktikum%20Manajemen%20Konstruksi,%20Program%20Studi%20Teknik%20Sipil,%20Universitas%20Muhammadiyah%20Yogyakarta." target="_blank" class="btn-wa"><i class="fa-brands fa-whatsapp"></i> Chat Asisten</a>
+                </div>
+                <!-- Asisten 7 -->
+                <div class="profile-card" data-aos="fade-up" data-aos-delay="350">
+                    <div class="profile-img">
+                        <img src="https://ui-avatars.com/api/?name=Najwa+Aulia+Yusniadewi&background=FACC15&color=0A192F&size=150" alt="Najwa Aulia Yusniadewi">
+                    </div>
+                    <h4>Najwa Aulia Y.</h4>
+                    <p>NIM: 20230110243</p>
+                    <a href="https://wa.me/6285711364302?text=Assalamualaikum/Selamat%20Pagi/Siang/Sore,%20perkenalkan%20saya%20[Nama%20Anda],%20NIM%20[NIM%20Anda],%20dari%20Kelompok%20[No.%20Kelompok]%20angkatan%20[Tahun].%20Saya%20menghubungi%20terkait%20Praktikum%20Manajemen%20Konstruksi,%20Program%20Studi%20Teknik%20Sipil,%20Universitas%20Muhammadiyah%20Yogyakarta." target="_blank" class="btn-wa"><i class="fa-brands fa-whatsapp"></i> Chat Asisten</a>
+                </div>
+                <!-- Asisten 8 -->
+                <div class="profile-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="profile-img">
+                        <img src="https://ui-avatars.com/api/?name=Ayu+Fitri+Cahyati&background=FACC15&color=0A192F&size=150" alt="Ayu Fitri Cahyati">
+                    </div>
+                    <h4>Ayu Fitri Cahyati</h4>
+                    <p>NIM: 20230110034</p>
+                    <a href="https://wa.me/6287808945607?text=Assalamualaikum/Selamat%20Pagi/Siang/Sore,%20perkenalkan%20saya%20[Nama%20Anda],%20NIM%20[NIM%20Anda],%20dari%20Kelompok%20[No.%20Kelompok]%20angkatan%20[Tahun].%20Saya%20menghubungi%20terkait%20Praktikum%20Manajemen%20Konstruksi,%20Program%20Studi%20Teknik%20Sipil,%20Universitas%20Muhammadiyah%20Yogyakarta." target="_blank" class="btn-wa"><i class="fa-brands fa-whatsapp"></i> Chat Asisten</a>
+                </div>
+                <!-- Asisten 9 -->
+                <div class="profile-card" data-aos="fade-up" data-aos-delay="450">
+                    <div class="profile-img">
+                        <img src="https://ui-avatars.com/api/?name=Early+Salsabila+Qatrun+Nada&background=FACC15&color=0A192F&size=150" alt="Early Salsabila Qatrun Nada">
+                    </div>
+                    <h4>Early Salsabila Q. N.</h4>
+                    <p>NIM: 20230110037</p>
+                    <a href="https://wa.me/6288277518942?text=Assalamualaikum/Selamat%20Pagi/Siang/Sore,%20perkenalkan%20saya%20[Nama%20Anda],%20NIM%20[NIM%20Anda],%20dari%20Kelompok%20[No.%20Kelompok]%20angkatan%20[Tahun].%20Saya%20menghubungi%20terkait%20Praktikum%20Manajemen%20Konstruksi,%20Program%20Studi%20Teknik%20Sipil,%20Universitas%20Muhammadiyah%20Yogyakarta." target="_blank" class="btn-wa"><i class="fa-brands fa-whatsapp"></i> Chat Asisten</a>
+                </div>
+                <!-- Asisten 10 -->
+                <div class="profile-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="profile-img">
+                        <img src="https://ui-avatars.com/api/?name=Siti+Hijrah+Marfuah&background=FACC15&color=0A192F&size=150" alt="Siti Hijrah Marfuah">
+                    </div>
+                    <h4>Siti Hijrah Marfuah</h4>
+                    <p>NIM: 20230110232</p>
+                    <a href="https://wa.me/6285197193682?text=Assalamualaikum/Selamat%20Pagi/Siang/Sore,%20perkenalkan%20saya%20[Nama%20Anda],%20NIM%20[NIM%20Anda],%20dari%20Kelompok%20[No.%20Kelompok]%20angkatan%20[Tahun].%20Saya%20menghubungi%20terkait%20Praktikum%20Manajemen%20Konstruksi,%20Program%20Studi%20Teknik%20Sipil,%20Universitas%20Muhammadiyah%20Yogyakarta." target="_blank" class="btn-wa"><i class="fa-brands fa-whatsapp"></i> Chat Asisten</a>
+                </div>
+                <!-- Asisten 11 -->
+                <div class="profile-card" data-aos="fade-up" data-aos-delay="550">
+                    <div class="profile-img">
+                        <img src="https://ui-avatars.com/api/?name=Devina+Zhafarina+Adzhani&background=FACC15&color=0A192F&size=150" alt="Devina Zhafarina Adzhani">
+                    </div>
+                    <h4>Devina Zhafarina A.</h4>
+                    <p>NIM: 20230110023</p>
+                    <a href="https://wa.me/62895621118109?text=Assalamualaikum/Selamat%20Pagi/Siang/Sore,%20perkenalkan%20saya%20[Nama%20Anda],%20NIM%20[NIM%20Anda],%20dari%20Kelompok%20[No.%20Kelompok]%20angkatan%20[Tahun].%20Saya%20menghubungi%20terkait%20Praktikum%20Manajemen%20Konstruksi,%20Program%20Studi%20Teknik%20Sipil,%20Universitas%20Muhammadiyah%20Yogyakarta." target="_blank" class="btn-wa"><i class="fa-brands fa-whatsapp"></i> Chat Asisten</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer data-aos="fade-up">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3><i class="fa-solid fa-helmet-safety"></i> Manajemen Konstruksi</h3>
+                <p>Website ini merupakan pusat informasi resmi kegiatan praktikum di Laboratorium Manajemen Konstruksi.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Tautan Cepat</h4>
+                <ul>
+                    <li><a href="#beranda">Beranda</a></li>
+                    <li><a href="#jadwal">Jadwal Praktikum</a></li>
+                    <li><a href="#unduhan">Pusat Unduhan</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Kontak Informasi</h4>
+                <p><i class="fa-solid fa-envelope"></i> mediamankon@gmail.com</p>
+                <p><i class="fa-brands fa-whatsapp"></i> +62 857 0029 3206 (Koordinator)</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Praktikum Manajemen Konstruksi - Teknik Sipil, Universitas Muhammadiyah Yogyakarta. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

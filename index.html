@@ -6,17 +6,33 @@
     <title>Praktikum Manajemen Konstruksi</title>
     <!-- AOS Animation CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=8">
     <!-- FontAwesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+    <!-- Model Viewer for 3D Logo -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
 </head>
 <body>
     <!-- Navbar -->
     <nav class="navbar" data-aos="fade-down" data-aos-duration="800">
         <div class="logo">
-            <i class="fa-solid fa-helmet-safety"></i>
+            <model-viewer 
+                class="logo-3d" 
+                src="Logo Mankon/asdasoduagdiuagw (1).glb" 
+                camera-orbit="0deg 75deg 10%"
+                field-of-view="5deg"
+                autoplay 
+                auto-rotate 
+                camera-controls
+                interaction-prompt="none" 
+                disable-zoom 
+                disable-pan 
+                shadow-intensity="0" 
+                style="--poster-color: transparent;"
+                aria-label="Logo 3D Manajemen Konstruksi">
+            </model-viewer>
             <span>Manajemen Konstruksi</span>
         </div>
         <ul class="nav-links">
@@ -34,12 +50,28 @@
     <!-- Hero Section -->
     <section id="beranda" class="hero">
         <div class="hero-overlay"></div>
-        <div class="hero-content" data-aos="zoom-in" data-aos-duration="1200">
-            <h1>Pusat Informasi Praktikum</h1>
-            <h2 class="highlight">Manajemen Konstruksi</h2>
-            <h3 style="color: #CCD6F6; font-size: 1.2rem; font-weight: 400; margin-bottom: 1.5rem; letter-spacing: 0.5px;">Program Studi Teknik Sipil, Universitas Muhammadiyah Yogyakarta</h3>
-            <p>Portal resmi untuk segala kebutuhan praktikum Anda. Temukan jadwal, unduh format laporan, soal praktikum, dan pelajari video tutorial dalam satu tempat.</p>
-            <a href="#unduhan" class="btn-primary">Jelajahi Unduhan</a>
+        <div class="hero-container container">
+            <div class="hero-text" data-aos="fade-right" data-aos-duration="1200">
+                <h1>Pusat Informasi Praktikum</h1>
+                <h2 class="highlight">Manajemen Konstruksi</h2>
+                <h3 style="color: #CCD6F6; font-size: 1.2rem; font-weight: 400; margin-bottom: 1.5rem; letter-spacing: 0.5px;">Program Studi Teknik Sipil, Universitas Muhammadiyah Yogyakarta</h3>
+                <p>Portal penunjang untuk segala kebutuhan praktikum Anda. Temukan jadwal, unduh format laporan, soal praktikum, dan pelajari video tutorial dalam satu tempat.</p>
+                <a href="#unduhan" class="btn-primary">Jelajahi Unduhan</a>
+            </div>
+            
+            <div class="hero-visual" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="300">
+                <div class="image-composition">
+                    <!-- Foto Utama -->
+                    <img src="Foto Dokumentasi/WhatsApp Image 2022-11-24 at 7.40.38 PM.jpeg" alt="Dokumentasi Praktikum 1" class="hero-img img-1">
+                    <!-- Foto Pendukung yang menumpuk -->
+                    <img src="Foto Dokumentasi/WhatsApp Image 2022-11-24 at 7.40.43 PM (1).jpeg" alt="Dokumentasi Praktikum 2" class="hero-img img-2">
+                    
+                    <div class="floating-badge">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <span>Dokumentasi Kelas</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -132,6 +164,101 @@
                     <p>Template hitungan RAB dan format tabel pengerjaan di Microsoft Excel.</p>
                     <a href="#" class="btn-outline">Unduh Template</a>
                 </div>
+            </div>
+
+            <!-- Soal Praktikum Section -->
+            <div class="section-header" data-aos="fade-up" style="margin-top: 5rem;">
+                <h2>Soal Praktikum</h2>
+                <p>Unduh soal kasus konstruksi untuk semester Ganjil maupun Genap di sini.</p>
+            </div>
+            <div class="soal-grid" data-aos="fade-up" data-aos-delay="100">
+
+                <!-- Semester Ganjil -->
+                <div class="soal-semester-card">
+                    <div class="soal-semester-header ganjil">
+                        <i class="fa-solid fa-sun"></i>
+                        <h3>Semester Ganjil</h3>
+                        <span class="soal-badge">Flexible Pavement 2024</span>
+                    </div>
+                    <div class="soal-files">
+                        <a href="Ganjil-20260813T105105Z-1-001/Ganjil/Soal Ganjil Flexible Pavement Manajemen Konstruksi 2024.pdf" target="_blank" class="soal-file-item" download>
+                            <div class="soal-file-icon pdf"><i class="fa-solid fa-file-pdf"></i></div>
+                            <div class="soal-file-info">
+                                <span class="soal-file-name">Soal Ganjil Flexible Pavement</span>
+                                <span class="soal-file-type">PDF Document</span>
+                            </div>
+                            <i class="fa-solid fa-download soal-dl-icon"></i>
+                        </a>
+                        <a href="Ganjil-20260813T105105Z-1-001/Ganjil/Kurva S Soal (Ganjil) 2024 - 2025.xlsx" target="_blank" class="soal-file-item" download>
+                            <div class="soal-file-icon excel"><i class="fa-solid fa-file-excel"></i></div>
+                            <div class="soal-file-info">
+                                <span class="soal-file-name">Kurva S Soal (Ganjil)</span>
+                                <span class="soal-file-type">Excel Spreadsheet</span>
+                            </div>
+                            <i class="fa-solid fa-download soal-dl-icon"></i>
+                        </a>
+                        <a href="Ganjil-20260813T105105Z-1-001/Ganjil/Soal Kurva S Ganjil Flexible Pavement.xlsx" target="_blank" class="soal-file-item" download>
+                            <div class="soal-file-icon excel"><i class="fa-solid fa-file-excel"></i></div>
+                            <div class="soal-file-info">
+                                <span class="soal-file-name">Soal Kurva S Ganjil</span>
+                                <span class="soal-file-type">Excel Spreadsheet</span>
+                            </div>
+                            <i class="fa-solid fa-download soal-dl-icon"></i>
+                        </a>
+                        <a href="Ganjil-20260813T105105Z-1-001/Ganjil/Prototype Soal Ganjil Flex Pavement.mpp" target="_blank" class="soal-file-item" download>
+                            <div class="soal-file-icon mpp"><i class="fa-solid fa-diagram-project"></i></div>
+                            <div class="soal-file-info">
+                                <span class="soal-file-name">Prototype Soal Ganjil (.mpp)</span>
+                                <span class="soal-file-type">MS Project File</span>
+                            </div>
+                            <i class="fa-solid fa-download soal-dl-icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Semester Genap -->
+                <div class="soal-semester-card">
+                    <div class="soal-semester-header genap">
+                        <i class="fa-solid fa-moon"></i>
+                        <h3>Semester Genap</h3>
+                        <span class="soal-badge">Jembatan 2024</span>
+                    </div>
+                    <div class="soal-files">
+                        <a href="Genap-20260813T105106Z-1-001/Genap/Soal Genap Jembatan Manajemen Konstruksi 2024.pdf" target="_blank" class="soal-file-item" download>
+                            <div class="soal-file-icon pdf"><i class="fa-solid fa-file-pdf"></i></div>
+                            <div class="soal-file-info">
+                                <span class="soal-file-name">Soal Genap Jembatan</span>
+                                <span class="soal-file-type">PDF Document</span>
+                            </div>
+                            <i class="fa-solid fa-download soal-dl-icon"></i>
+                        </a>
+                        <a href="Genap-20260813T105106Z-1-001/Genap/Kurva S Soal Jembatan (Genap) 2024-2025.xlsx" target="_blank" class="soal-file-item" download>
+                            <div class="soal-file-icon excel"><i class="fa-solid fa-file-excel"></i></div>
+                            <div class="soal-file-info">
+                                <span class="soal-file-name">Kurva S Soal Jembatan (Genap)</span>
+                                <span class="soal-file-type">Excel Spreadsheet</span>
+                            </div>
+                            <i class="fa-solid fa-download soal-dl-icon"></i>
+                        </a>
+                        <a href="Genap-20260813T105106Z-1-001/Genap/Soal Kurva S Genap Jembatan.xlsx" target="_blank" class="soal-file-item" download>
+                            <div class="soal-file-icon excel"><i class="fa-solid fa-file-excel"></i></div>
+                            <div class="soal-file-info">
+                                <span class="soal-file-name">Soal Kurva S Genap</span>
+                                <span class="soal-file-type">Excel Spreadsheet</span>
+                            </div>
+                            <i class="fa-solid fa-download soal-dl-icon"></i>
+                        </a>
+                        <a href="Genap-20260813T105106Z-1-001/Genap/Prototype Soal Genap Jembatan.mpp" target="_blank" class="soal-file-item" download>
+                            <div class="soal-file-icon mpp"><i class="fa-solid fa-diagram-project"></i></div>
+                            <div class="soal-file-info">
+                                <span class="soal-file-name">Prototype Soal Genap (.mpp)</span>
+                                <span class="soal-file-type">MS Project File</span>
+                            </div>
+                            <i class="fa-solid fa-download soal-dl-icon"></i>
+                        </a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -306,7 +433,24 @@
     <footer data-aos="fade-up">
         <div class="container footer-content">
             <div class="footer-brand">
-                <h3><i class="fa-solid fa-helmet-safety"></i> Manajemen Konstruksi</h3>
+                <h3 style="display: flex; align-items: center; gap: 0.5rem;">
+                    <model-viewer 
+                        class="logo-3d" 
+                        src="Logo Mankon/asdasoduagdiuagw (1).glb" 
+                        camera-orbit="0deg 75deg 10%"
+                        field-of-view="5deg"
+                        autoplay 
+                        auto-rotate 
+                        camera-controls
+                        interaction-prompt="none" 
+                        disable-zoom 
+                        disable-pan 
+                        shadow-intensity="0" 
+                        style="--poster-color: transparent;"
+                        aria-label="Logo 3D Manajemen Konstruksi">
+                    </model-viewer>
+                    Manajemen Konstruksi
+                </h3>
                 <p>Website ini merupakan pusat informasi resmi kegiatan praktikum di Laboratorium Manajemen Konstruksi.</p>
             </div>
             <div class="footer-links">

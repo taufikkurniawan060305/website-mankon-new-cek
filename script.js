@@ -70,4 +70,31 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // 5. 3D Logo mouse hover interaction
+    const logos = document.querySelectorAll('.logo-3d');
+    logos.forEach(logo => {
+        const hasAutoRotate = logo.hasAttribute('auto-rotate');
+        
+        logo.addEventListener('mousemove', (e) => {
+            if (logo.hasAttribute('auto-rotate')) {
+                logo.removeAttribute('auto-rotate');
+            }
+            const rect = logo.getBoundingClientRect();
+            const x = e.clientX - rect.left - rect.width / 2;
+            const y = e.clientY - rect.top - rect.height / 2;
+            
+            const rotateX = (x / (rect.width / 2)) * 60; 
+            const rotateY = 75 + (y / (rect.height / 2)) * 30; 
+            
+            logo.setAttribute('camera-orbit', `${rotateX}deg ${rotateY}deg 10%`);
+        });
+        
+        logo.addEventListener('mouseleave', () => {
+            logo.removeAttribute('camera-orbit');
+            if (hasAutoRotate) {
+                logo.setAttribute('auto-rotate', '');
+            }
+        });
+    });
 });

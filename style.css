@@ -583,6 +583,64 @@ a {
     background: #8b5cf6;
 }
 
+/* AHSP 3 Tipe Styling */
+.soal-semester-header.cipta-karya {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.25), rgba(16, 185, 129, 0.08));
+    border-bottom: 2px solid rgba(16, 185, 129, 0.3);
+}
+
+.soal-semester-header.cipta-karya::before {
+    background: #10b981;
+}
+
+.soal-semester-header.cipta-karya i {
+    color: #34d399;
+}
+
+.soal-semester-header.cipta-karya .soal-badge {
+    background: rgba(16, 185, 129, 0.2);
+    color: #34d399;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.soal-semester-header.bina-marga {
+    background: linear-gradient(135deg, rgba(6, 182, 212, 0.25), rgba(6, 182, 212, 0.08));
+    border-bottom: 2px solid rgba(6, 182, 212, 0.3);
+}
+
+.soal-semester-header.bina-marga::before {
+    background: var(--accent);
+}
+
+.soal-semester-header.bina-marga i {
+    color: var(--accent);
+}
+
+.soal-semester-header.bina-marga .soal-badge {
+    background: rgba(6, 182, 212, 0.2);
+    color: var(--accent);
+    border: 1px solid rgba(6, 182, 212, 0.3);
+}
+
+.soal-semester-header.sda {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.25), rgba(59, 130, 246, 0.08));
+    border-bottom: 2px solid rgba(59, 130, 246, 0.3);
+}
+
+.soal-semester-header.sda::before {
+    background: #3b82f6;
+}
+
+.soal-semester-header.sda i {
+    color: #60a5fa;
+}
+
+.soal-semester-header.sda .soal-badge {
+    background: rgba(59, 130, 246, 0.2);
+    color: #60a5fa;
+    border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
 .soal-semester-header i {
     font-size: 2.2rem;
 }

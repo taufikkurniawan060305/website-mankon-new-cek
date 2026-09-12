@@ -523,16 +523,15 @@ a {
 
 /* Soal Praktikum Grid */
 .soal-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 2.5rem;
     margin-top: 1rem;
+    justify-content: center;
 }
 
 .soal-semester-card {
-    flex: 1 1 340px;
-    max-width: 540px;
+    width: 100%;
     background-color: var(--primary);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
@@ -541,6 +540,19 @@ a {
     border: 1px solid rgba(255, 255, 255, 0.07);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Jika tampilan 2 kolom (tablet/laptop sedang), pusatkan kartu ke-3 (AHSP SDA) di tengah secara simetris */
+@media (min-width: 768px) and (max-width: 1150px) {
+    .soal-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .soal-grid .soal-semester-card:nth-child(3):last-child {
+        grid-column: 1 / -1;
+        justify-self: center;
+        width: 100%;
+        max-width: 550px;
+    }
 }
 
 .soal-semester-card:hover {
@@ -1359,14 +1371,8 @@ footer {
     }
 
     .soal-grid {
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: 1fr;
         gap: 1.5rem;
-    }
-
-    .soal-grid .soal-semester-card {
-        width: 100%;
-        max-width: 100%;
     }
 
     .video-grid {

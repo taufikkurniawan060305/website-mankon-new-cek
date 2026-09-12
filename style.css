@@ -523,13 +523,16 @@ a {
 
 /* Soal Praktikum Grid */
 .soal-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 2.5rem;
     margin-top: 1rem;
 }
 
 .soal-semester-card {
+    flex: 1 1 340px;
+    max-width: 540px;
     background-color: var(--primary);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
@@ -1356,8 +1359,14 @@ footer {
     }
 
     .soal-grid {
-        grid-template-columns: 1fr;
+        flex-direction: column;
+        align-items: center;
         gap: 1.5rem;
+    }
+
+    .soal-grid .soal-semester-card {
+        width: 100%;
+        max-width: 100%;
     }
 
     .video-grid {

@@ -446,35 +446,6 @@ a {
     border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.schedule-table {
-    width: 100%;
-    border-collapse: collapse;
-    text-align: left;
-}
-
-.schedule-table th,
-.schedule-table td {
-    padding: 1.5rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-.schedule-table th {
-    background-color: rgba(35, 53, 84, 0.3);
-    color: var(--white);
-    font-family: 'Outfit', sans-serif;
-    font-weight: 600;
-    letter-spacing: 1px;
-}
-
-.schedule-table tr:hover {
-    background-color: rgba(250, 204, 21, 0.05);
-}
-
-.schedule-table td:first-child {
-    font-weight: 700;
-    color: var(--accent);
-    font-size: 1.2rem;
-}
 
 /* Cards Grid (Glassmorphism) */
 .cards-grid {
@@ -722,6 +693,32 @@ a {
     background: rgba(6, 182, 212, 0.1);
     border-color: rgba(6, 182, 212, 0.25);
     transform: translateX(4px);
+}
+
+.soal-file-item.featured-2026 {
+    background: linear-gradient(135deg, rgba(6, 182, 212, 0.14), rgba(16, 185, 129, 0.09));
+    border: 1px solid rgba(6, 182, 212, 0.4);
+    box-shadow: 0 4px 15px rgba(6, 182, 212, 0.1);
+}
+
+.soal-file-item.featured-2026:hover {
+    background: linear-gradient(135deg, rgba(6, 182, 212, 0.22), rgba(16, 185, 129, 0.16));
+    border-color: rgba(6, 182, 212, 0.7);
+    box-shadow: 0 6px 20px rgba(6, 182, 212, 0.22);
+}
+
+.badge-new-2026 {
+    display: inline-block;
+    padding: 0.18rem 0.55rem;
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: #0a192f;
+    background: linear-gradient(135deg, #38bdf8, #34d399);
+    border-radius: 9999px;
+    margin-left: 0.45rem;
+    letter-spacing: 0.5px;
+    vertical-align: middle;
+    box-shadow: 0 2px 8px rgba(56, 189, 248, 0.4);
 }
 
 .soal-file-icon {
@@ -1349,9 +1346,639 @@ footer {
     line-height: 1.5;
 }
 
+/* ==========================================================================
+   Jadwal Praktikum - Enhanced Class & Materials Scheduling System
+   ========================================================================== */
+
+/* 1. Banner Serentak Pertemuan Pertama */
+.serentak-banner {
+    background: linear-gradient(135deg, rgba(6, 182, 212, 0.12) 0%, rgba(17, 34, 64, 0.9) 100%);
+    border: 1px solid rgba(6, 182, 212, 0.35);
+    border-radius: 18px;
+    padding: 2.2rem;
+    margin-bottom: 3.5rem;
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35), 0 0 25px rgba(6, 182, 212, 0.15);
+    position: relative;
+    overflow: hidden;
+}
+
+.serentak-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 100%;
+    background: linear-gradient(180deg, #06B6D4, #3B82F6);
+}
+
+.serentak-icon-wrap {
+    width: 65px;
+    height: 65px;
+    border-radius: 16px;
+    background: rgba(6, 182, 212, 0.15);
+    border: 1px solid rgba(6, 182, 212, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--accent);
+    flex-shrink: 0;
+    box-shadow: 0 0 18px rgba(6, 182, 212, 0.3);
+}
+
+.serentak-content {
+    flex: 1;
+}
+
+.serentak-badge-top {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(239, 68, 68, 0.15);
+    border: 1px solid rgba(239, 68, 68, 0.35);
+    color: #FCA5A5;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 0.35rem 0.85rem;
+    border-radius: 50px;
+    margin-bottom: 0.8rem;
+}
+
+.pulse-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #EF4444;
+    box-shadow: 0 0 10px #EF4444;
+    animation: pulse 1.6s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.4; transform: scale(1.3); }
+}
+
+.serentak-content h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 0.5rem;
+}
+
+.serentak-content p {
+    color: var(--text-main);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+}
+
+.serentak-meta-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.2rem;
+}
+
+.serentak-meta-item {
+    background: rgba(7, 15, 29, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 0.9rem 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.serentak-meta-item i {
+    font-size: 1.4rem;
+    color: var(--accent);
+}
+
+.serentak-meta-item strong {
+    display: block;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    letter-spacing: 0.5px;
+}
+
+.serentak-meta-item span {
+    font-size: 0.98rem;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.serentak-note {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    background: rgba(6, 182, 212, 0.06);
+    border-radius: 8px;
+    padding: 0.6rem 1rem;
+    border-left: 3px solid var(--accent);
+}
+
+.serentak-note i {
+    color: var(--accent);
+}
+
+
+/* 3. Panel Filter & Kontrol */
+.schedule-filter-box {
+    background: rgba(17, 34, 64, 0.6);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 1.8rem 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.filter-header-title {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.filter-header-title i {
+    color: var(--accent);
+}
+
+.class-tabs-container {
+    margin-bottom: 1.5rem;
+}
+
+.filter-label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.75rem;
+}
+
+.filter-label i {
+    color: var(--accent);
+    margin-right: 0.25rem;
+}
+
+.class-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+}
+
+.class-tab-btn {
+    background: rgba(7, 15, 29, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--text-main);
+    padding: 0.6rem 1.15rem;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.class-tab-btn:hover {
+    border-color: rgba(6, 182, 212, 0.5);
+    color: var(--accent);
+    background: rgba(6, 182, 212, 0.08);
+}
+
+.class-tab-btn.active {
+    background: var(--accent);
+    color: var(--primary-dark);
+    border-color: var(--accent);
+    font-weight: 700;
+    box-shadow: 0 0 16px rgba(6, 182, 212, 0.4);
+}
+
+.filter-controls-row {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 1.5rem;
+}
+
+.custom-select-wrapper,
+.search-input-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.filter-select,
+.filter-input {
+    width: 100%;
+    background: rgba(7, 15, 29, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 10px;
+    padding: 0.75rem 1.2rem;
+    color: var(--white);
+    font-size: 0.92rem;
+    font-family: inherit;
+    transition: all 0.25s ease;
+    outline: none;
+}
+
+.filter-select {
+    appearance: none;
+    -webkit-appearance: none;
+    padding-right: 2.5rem;
+    cursor: pointer;
+}
+
+.filter-select option {
+    background: #0d1b2a;
+    color: #CCD6F6;
+    padding: 0.5rem;
+}
+
+.filter-input {
+    padding-left: 2.5rem;
+}
+
+.select-icon {
+    position: absolute;
+    right: 1.1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: var(--accent);
+    font-size: 0.85rem;
+}
+
+.search-icon {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.filter-select:focus,
+.filter-input:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 12px rgba(6, 182, 212, 0.25);
+}
+
+/* 4. Active Banner Summary */
+.class-active-banner {
+    background: rgba(17, 34, 64, 0.4);
+    border: 1px solid rgba(6, 182, 212, 0.2);
+    border-radius: 12px;
+    padding: 1.2rem 1.6rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.active-banner-label {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.active-banner-info h4 {
+    font-size: 1.3rem;
+    color: var(--white);
+    margin: 0.2rem 0;
+}
+
+.active-banner-info p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.active-banner-stats {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.stat-pill {
+    background: rgba(7, 15, 29, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--text-main);
+    padding: 0.45rem 0.9rem;
+    border-radius: 50px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.stat-pill.accent-pill {
+    background: rgba(6, 182, 212, 0.15);
+    border-color: rgba(6, 182, 212, 0.4);
+    color: #67E8F9;
+}
+
+/* 5. Tabel Jadwal Modern */
+.schedule-table-wrapper {
+    background: var(--primary);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--primary-light);
+    border-radius: 16px;
+    padding: 1rem;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    text-align: left;
+}
+
+.schedule-table thead th {
+    background: rgba(7, 15, 29, 0.9);
+    color: var(--white);
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.88rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    padding: 1.1rem 1.2rem;
+    border-bottom: 2px solid rgba(6, 182, 212, 0.4);
+    white-space: nowrap;
+}
+
+.schedule-table thead th:first-child {
+    border-top-left-radius: 10px;
+}
+
+.schedule-table thead th:last-child {
+    border-top-right-radius: 10px;
+}
+
+.schedule-table tbody tr {
+    transition: background-color 0.25s ease;
+}
+
+.schedule-table tbody tr:hover {
+    background-color: rgba(6, 182, 212, 0.08);
+}
+
+.schedule-table tbody td {
+    padding: 1.1rem 1.2rem;
+    color: var(--text-main);
+    font-size: 0.92rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    vertical-align: middle;
+}
+
+.schedule-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Row Serentak Highlight */
+.row-serentak {
+    background: linear-gradient(90deg, rgba(6, 182, 212, 0.12) 0%, rgba(17, 34, 64, 0.4) 100%);
+    border-left: 4px solid var(--accent);
+}
+
+.row-serentak:hover {
+    background: linear-gradient(90deg, rgba(6, 182, 212, 0.18) 0%, rgba(17, 34, 64, 0.6) 100%) !important;
+}
+
+/* Badges inside table */
+.badge-modul {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    background: rgba(6, 182, 212, 0.12);
+    border: 1px solid rgba(6, 182, 212, 0.3);
+    color: var(--accent);
+    font-weight: 800;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.95rem;
+}
+
+.row-serentak .badge-modul {
+    background: var(--accent);
+    color: var(--primary-dark);
+    box-shadow: 0 0 10px rgba(6, 182, 212, 0.4);
+}
+
+.materi-title {
+    font-weight: 600;
+    color: var(--white);
+    display: block;
+    margin-bottom: 0.35rem;
+    line-height: 1.4;
+}
+
+.materi-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.tag-badge {
+    font-size: 0.72rem;
+    padding: 0.15rem 0.5rem;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--text-muted);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.tag-badge.accent {
+    background: rgba(6, 182, 212, 0.1);
+    color: #67E8F9;
+    border-color: rgba(6, 182, 212, 0.25);
+}
+
+.tag-badge.special {
+    background: rgba(239, 68, 68, 0.15);
+    color: #FCA5A5;
+    border-color: rgba(239, 68, 68, 0.3);
+    font-weight: 700;
+}
+
+.cell-center {
+    text-align: center !important;
+}
+
+.cell-class {
+    text-align: center !important;
+    white-space: nowrap !important;
+    padding: 0.85rem 0.5rem !important;
+    width: 140px !important;
+    min-width: 140px !important;
+}
+
+.class-tag-pill {
+    display: inline-flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0.45rem !important;
+    background: linear-gradient(135deg, rgba(6, 182, 212, 0.16) 0%, rgba(17, 34, 64, 0.9) 100%) !important;
+    border: 1px solid rgba(6, 182, 212, 0.45) !important;
+    color: #67E8F9 !important;
+    padding: 0.4rem 0.9rem !important;
+    border-radius: 50px !important;
+    font-size: 0.82rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.5px !important;
+    white-space: nowrap !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25) !important;
+    transition: all 0.25s ease !important;
+    line-height: 1.2 !important;
+}
+
+.class-tag-pill i {
+    font-size: 0.78rem !important;
+    color: var(--accent) !important;
+    flex-shrink: 0 !important;
+}
+
+.class-tag-pill span {
+    white-space: nowrap !important;
+}
+
+.class-tag-pill.all-classes {
+    background: linear-gradient(135deg, rgba(6, 182, 212, 0.25) 0%, rgba(17, 34, 64, 0.95) 100%) !important;
+    color: var(--white) !important;
+    border-color: var(--accent) !important;
+    box-shadow: 0 2px 10px rgba(6, 182, 212, 0.3) !important;
+}
+
+.class-tag-pill:hover {
+    border-color: #67E8F9 !important;
+    background: linear-gradient(135deg, rgba(6, 182, 212, 0.25) 0%, rgba(17, 34, 64, 0.9) 100%) !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 12px rgba(6, 182, 212, 0.35) !important;
+}
+
+.date-text {
+    font-weight: 600;
+    color: var(--white);
+    display: block;
+}
+
+.day-subtext {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.time-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.88rem;
+    color: var(--text-main);
+    font-weight: 500;
+}
+
+.time-pill i {
+    color: var(--accent);
+}
+
+.room-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 0.3rem 0.7rem;
+    border-radius: 6px;
+    font-size: 0.82rem;
+    color: var(--text-main);
+}
+
+.room-badge i {
+    color: var(--accent);
+}
+
+.table-action-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.4rem 0.75rem;
+    background: rgba(6, 182, 212, 0.1);
+    border: 1px solid rgba(6, 182, 212, 0.3);
+    color: var(--accent);
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    transition: all 0.25s ease;
+}
+
+.table-action-link:hover {
+    background: var(--accent);
+    color: var(--primary-dark);
+}
+
+/* No results state */
+.no-results-msg {
+    text-align: center;
+    padding: 3.5rem 1.5rem;
+}
+
+.no-results-msg i {
+    font-size: 3rem;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+    opacity: 0.6;
+}
+
+.no-results-msg p {
+    color: var(--text-muted);
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
 @media (max-width: 992px) {
     .main-video-wrapper {
         grid-template-columns: 1fr;
+    }
+    .filter-controls-row {
+        grid-template-columns: 1fr;
+    }
+    .serentak-banner {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1.8rem;
     }
 }
 

@@ -163,13 +163,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const modulesData = [
         {
             id: 1,
-            title: "Materi Pengenalan OBS/WBS",
-            tags: ["Serentak", "Konsep Dasar", "WBS/OBS"],
+            title: "Materi Pengenalan OBS/WBS & Briefing Praktikum",
+            tags: ["Serentak", "Briefing Praktikum", "WBS/OBS"],
             isSpecialSerentak: true,
             serentakDate: "Kamis, 17 Sep 2026",
             serentakDay: "Kamis",
-            serentakTime: "08.00 - 10.00 WIB",
-            serentakRoom: "Via Online (Link Menyusul)",
+            serentakTime: "19.00 WIB - Selesai",
+            serentakRoom: "Zoom Meeting (Dishare di Grup WA)",
             link: "#unduhan",
             linkText: "Unduh WBS"
         },
@@ -473,7 +473,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const classInfo = classScheduleData[currentSelectedClass];
             if (classInfo) {
                 if (activeClassName) activeClassName.textContent = `${classInfo.name} - Jadwal Lengkap`;
-                if (activeClassDesc) activeClassDesc.textContent = `${classInfo.desc} | Lokasi: ${classInfo.room}. (Khusus Modul 1 serentak di hari Kamis, 17 Sep 2026).`;
+                if (activeClassDesc) activeClassDesc.textContent = `${classInfo.desc} | Lokasi: ${classInfo.room}. (Khusus Modul 1 serentak Kamis, 17 Sep 2026 pukul 19.00 WIB via Zoom).`;
                 if (activeClassTimingPill) activeClassTimingPill.innerHTML = `<i class="fa-regular fa-clock"></i> Setiap ${classInfo.dayName}, ${classInfo.time}`;
             }
         }

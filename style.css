@@ -627,6 +627,45 @@ a {
     border: 1px solid rgba(59, 130, 246, 0.3);
 }
 
+/* Dokumen Contoh Laporan & Lembar Monitoring */
+.soal-semester-header.laporan {
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.25), rgba(245, 158, 11, 0.08));
+    border-bottom: 2px solid rgba(245, 158, 11, 0.3);
+}
+
+.soal-semester-header.laporan::before {
+    background: #f59e0b;
+}
+
+.soal-semester-header.laporan i {
+    color: #fbbf24;
+}
+
+.soal-semester-header.laporan .soal-badge {
+    background: rgba(245, 158, 11, 0.2);
+    color: #fbbf24;
+    border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.soal-semester-header.monitoring {
+    background: linear-gradient(135deg, rgba(168, 85, 247, 0.25), rgba(168, 85, 247, 0.08));
+    border-bottom: 2px solid rgba(168, 85, 247, 0.3);
+}
+
+.soal-semester-header.monitoring::before {
+    background: #a855f7;
+}
+
+.soal-semester-header.monitoring i {
+    color: #c084fc;
+}
+
+.soal-semester-header.monitoring .soal-badge {
+    background: rgba(168, 85, 247, 0.2);
+    color: #c084fc;
+    border: 1px solid rgba(168, 85, 247, 0.3);
+}
+
 .soal-semester-header i {
     font-size: 2.2rem;
 }

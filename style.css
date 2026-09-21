@@ -666,6 +666,99 @@ a {
     border: 1px solid rgba(168, 85, 247, 0.3);
 }
 
+/* Modul Minggu ke-2 Styling */
+.soal-semester-header.minggu2-kasus {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.25), rgba(16, 185, 129, 0.08));
+    border-bottom: 2px solid rgba(16, 185, 129, 0.3);
+}
+.soal-semester-header.minggu2-kasus::before {
+    background: #10b981;
+}
+.soal-semester-header.minggu2-kasus i {
+    color: #34d399;
+}
+.soal-semester-header.minggu2-kasus .soal-badge {
+    background: rgba(16, 185, 129, 0.2);
+    color: #34d399;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.soal-semester-header.minggu2-tulangan {
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.25), rgba(245, 158, 11, 0.08));
+    border-bottom: 2px solid rgba(245, 158, 11, 0.3);
+}
+.soal-semester-header.minggu2-tulangan::before {
+    background: #f59e0b;
+}
+.soal-semester-header.minggu2-tulangan i {
+    color: #fbbf24;
+}
+.soal-semester-header.minggu2-tulangan .soal-badge {
+    background: rgba(245, 158, 11, 0.2);
+    color: #fbbf24;
+    border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.soal-semester-header.minggu2-cor {
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.25), rgba(99, 102, 241, 0.08));
+    border-bottom: 2px solid rgba(99, 102, 241, 0.3);
+}
+.soal-semester-header.minggu2-cor::before {
+    background: #6366f1;
+}
+.soal-semester-header.minggu2-cor i {
+    color: #818cf8;
+}
+.soal-semester-header.minggu2-cor .soal-badge {
+    background: rgba(99, 102, 241, 0.2);
+    color: #818cf8;
+    border: 1px solid rgba(99, 102, 241, 0.3);
+}
+
+.soal-semester-header.minggu2-cad {
+    background: linear-gradient(135deg, rgba(239, 68, 68, 0.25), rgba(239, 68, 68, 0.08));
+    border-bottom: 2px solid rgba(239, 68, 68, 0.3);
+}
+.soal-semester-header.minggu2-cad::before {
+    background: #ef4444;
+}
+.soal-semester-header.minggu2-cad i {
+    color: #f87171;
+}
+.soal-semester-header.minggu2-cad .soal-badge {
+    background: rgba(239, 68, 68, 0.2);
+    color: #f87171;
+    border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.badge-minggu-2 {
+    display: inline-block;
+    padding: 0.18rem 0.55rem;
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: #0a192f;
+    background: linear-gradient(135deg, #f59e0b, #fbbf24);
+    border-radius: 9999px;
+    margin-left: 0.45rem;
+    letter-spacing: 0.5px;
+    vertical-align: middle;
+    box-shadow: 0 2px 8px rgba(245, 158, 11, 0.4);
+}
+
+.badge-lampiran {
+    display: inline-block;
+    padding: 0.18rem 0.55rem;
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: #ffffff;
+    background: linear-gradient(135deg, #8b5cf6, #6366f1);
+    border-radius: 9999px;
+    margin-left: 0.45rem;
+    letter-spacing: 0.5px;
+    vertical-align: middle;
+    box-shadow: 0 2px 8px rgba(139, 92, 246, 0.4);
+}
+
 .soal-semester-header i {
     font-size: 2.2rem;
 }
@@ -779,6 +872,17 @@ a {
 .soal-file-icon.excel {
     background: rgba(34, 197, 94, 0.15);
     color: #4ade80;
+}
+
+.soal-file-icon.word {
+    background: rgba(37, 99, 235, 0.15);
+    color: #60a5fa;
+}
+
+.soal-file-icon.cad,
+.soal-file-icon.dwg {
+    background: rgba(249, 115, 22, 0.15);
+    color: #fb923c;
 }
 
 .soal-file-icon.mpp {

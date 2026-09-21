@@ -7,7 +7,7 @@
     <title>Praktikum Manajemen Konstruksi</title>
     <!-- AOS Animation CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=20260918_1">
+    <link rel="stylesheet" href="style.css?v=20260921_1">
     <!-- FontAwesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
@@ -253,15 +253,15 @@
                     <div class="card-icon"><i class="fa-solid fa-file-signature"></i></div>
                     <h3>Format Laporan</h3>
                     <p>Aturan penulisan margin, jenis font, cover, dan struktur isi laporan praktikum.</p>
-                    <a href="#" class="btn-outline">Unduh Format</a>
+                    <a href="#contoh-laporan-section" class="btn-outline">Lihat Format</a>
                 </div>
                 <!-- Card 2 -->
                 <div class="card" data-aos="fade-up" data-aos-delay="200">
                     <div class="card-icon"><i class="fa-solid fa-file-pdf"></i></div>
                     <h3>Contoh Laporan</h3>
-                    <p>Contoh laporan praktikum OBS dan WBS lengkap sebagai referensi acuan penyusunan.</p>
-                    <a href="Contoh Laporan/Contoh Laporan OBS dan WBS.pdf" target="_blank" class="btn-outline" download>
-                        <i class="fa-solid fa-download"></i> Unduh Contoh
+                    <p>Contoh laporan praktikum Minggu ke-2 serta OBS & WBS sebagai acuan resmi.</p>
+                    <a href="#contoh-laporan-section" class="btn-outline">
+                        <i class="fa-solid fa-file-lines"></i> Unduh Contoh
                     </a>
                 </div>
                 <!-- Card 3 -->
@@ -277,22 +277,24 @@
                 <div class="card" data-aos="fade-up" data-aos-delay="300">
                     <div class="card-icon"><i class="fa-solid fa-clipboard-question"></i></div>
                     <h3>Soal Praktikum</h3>
-                    <p>Soal kasus konstruksi yang akan dibahas dan diselesaikan pada tiap modul.</p>
-                    <a href="#soal-ahsp-section" class="btn-outline">Lihat Soal</a>
+                    <p>Soal kasus konstruksi 3 bidang, volume pembesian, dan pengecoran tiap modul.</p>
+                    <a href="#soal-minggu-2-section" class="btn-outline">Soal Minggu 2</a>
                 </div>
                 <!-- Card 5 -->
                 <div class="card" data-aos="fade-up" data-aos-delay="350">
                     <div class="card-icon"><i class="fa-solid fa-file-excel"></i></div>
                     <h3>Template Pengerjaan</h3>
-                    <p>Template hitungan RAB dan format tabel pengerjaan di Microsoft Excel.</p>
-                    <a href="#" class="btn-outline">Unduh Template</a>
+                    <p>Template hitungan volume dalam Kg, pengecoran, dan format tabel Microsoft Excel.</p>
+                    <a href="Soal Minggu ke 2/Format Soal Perhitungan Volume dalam Kg fixx.xlsx" class="btn-outline" download>
+                        <i class="fa-solid fa-download"></i> Unduh Template
+                    </a>
                 </div>
             </div>
 
             <!-- Berkas Contoh Laporan & Lembar Asistensi Section -->
-            <div class="section-header" data-aos="fade-up" style="margin-top: 5rem;">
+            <div id="contoh-laporan-section" class="section-header" data-aos="fade-up" style="margin-top: 5rem;">
                 <h2>Contoh Laporan & Lembar Asistensi</h2>
-                <p>Unduh dokumen acuan penyusunan laporan OBS & WBS serta lembar monitoring kartu kendali asistensi praktikum.</p>
+                <p>Unduh dokumen acuan penyusunan laporan mingguan praktikum, lampiran tabel berat tulangan, serta lembar kendali asistensi.</p>
             </div>
             <div class="soal-grid" data-aos="fade-up" data-aos-delay="100">
 
@@ -300,16 +302,39 @@
                 <div class="soal-semester-card">
                     <div class="soal-semester-header laporan">
                         <i class="fa-solid fa-book-bookmark"></i>
-                        <h3>Contoh Laporan</h3>
-                        <span class="soal-badge">Laporan OBS & WBS</span>
+                        <h3>Contoh Laporan Praktikum</h3>
+                        <span class="soal-badge">Acuan Laporan</span>
                     </div>
                     <div class="soal-files">
-                        <a href="Contoh Laporan/Contoh Laporan OBS dan WBS.pdf"
+                        <!-- Contoh Laporan Minggu 2 -->
+                        <a href="Contoh Laporan/Contoh Laporan Minggu ke 2 Manajemen Konstruksi.pdf"
                             target="_blank" class="soal-file-item featured-2026" download>
                             <div class="soal-file-icon pdf"><i class="fa-solid fa-file-pdf"></i></div>
                             <div class="soal-file-info">
-                                <span class="soal-file-name">Contoh Laporan OBS dan WBS 2026 <span class="badge-new-2026">TERBARU 2026</span></span>
-                                <span class="soal-file-type">PDF Document • 23.9 MB</span>
+                                <span class="soal-file-name">Contoh Laporan Minggu ke-2 Manajemen Konstruksi <span class="badge-minggu-2">MINGGU 2</span> <span class="badge-new-2026">TERBARU 2026</span></span>
+                                <span class="soal-file-type">PDF Document • 1.17 MB • Laporan Perhitungan Volume & Penulangan</span>
+                            </div>
+                            <i class="fa-solid fa-download soal-dl-icon" title="Unduh Berkas"></i>
+                        </a>
+
+                        <!-- Lampiran Tabel Berat Tulangan -->
+                        <a href="Contoh Laporan/Lampiran Tabel Perhitungan Berat Tulangan.pdf"
+                            target="_blank" class="soal-file-item featured-2026" download>
+                            <div class="soal-file-icon pdf"><i class="fa-solid fa-file-pdf"></i></div>
+                            <div class="soal-file-info">
+                                <span class="soal-file-name">Lampiran Tabel Perhitungan Berat Tulangan <span class="badge-lampiran">LAMPIRAN</span></span>
+                                <span class="soal-file-type">PDF Document • 134 KB • Tabel Konversi Berat Tulangan Besi Praktikum</span>
+                            </div>
+                            <i class="fa-solid fa-download soal-dl-icon" title="Unduh Berkas"></i>
+                        </a>
+
+                        <!-- Contoh Laporan Minggu 1 OBS WBS -->
+                        <a href="Contoh Laporan/Contoh Laporan OBS dan WBS.pdf"
+                            target="_blank" class="soal-file-item" download>
+                            <div class="soal-file-icon pdf"><i class="fa-solid fa-file-pdf"></i></div>
+                            <div class="soal-file-info">
+                                <span class="soal-file-name">Contoh Laporan OBS dan WBS (Minggu 1)</span>
+                                <span class="soal-file-type">PDF Document • 23.9 MB • Acuan Struktur Dokumen OBS & WBS</span>
                             </div>
                             <i class="fa-solid fa-download soal-dl-icon" title="Unduh Berkas"></i>
                         </a>
@@ -329,7 +354,7 @@
                             <div class="soal-file-icon pdf"><i class="fa-solid fa-file-pdf"></i></div>
                             <div class="soal-file-info">
                                 <span class="soal-file-name">Lembar Monitoring Praktikum Manajemen Konstruksi <span class="badge-new-2026">TERBARU 2026</span></span>
-                                <span class="soal-file-type">PDF Document • 109 KB</span>
+                                <span class="soal-file-type">PDF Document • 109 KB • Kartu Kendali Asistensi Mahasiswa</span>
                             </div>
                             <i class="fa-solid fa-download soal-dl-icon" title="Unduh Berkas"></i>
                         </a>
@@ -338,10 +363,189 @@
 
             </div>
 
-            <!-- Soal Praktikum & AHSP Section -->
+            <!-- Soal Praktikum Minggu ke-2 Section -->
+            <div id="soal-minggu-2-section" class="section-header" data-aos="fade-up" style="margin-top: 5rem;">
+                <h2>Soal & Berkas Praktikum Minggu ke-2</h2>
+                <p>Unduh seluruh materi penugasan Minggu ke-2: Kasus 3 bidang studi praktikan, format perhitungan volume tulangan & pengecoran, serta gambar kerja AutoCAD (.DWG).</p>
+            </div>
+            <div class="soal-grid" data-aos="fade-up" data-aos-delay="100">
+
+                <!-- Card 1: Kasus 3 Bidang Praktikan -->
+                <div class="soal-semester-card">
+                    <div class="soal-semester-header minggu2-kasus">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <h3>Kasus 3 Bidang</h3>
+                        <span class="soal-badge">Praktikan Minggu 2</span>
+                    </div>
+                    <div class="soal-files">
+                        <a href="Soal Minggu ke 2/Soal Gedung Praktikan.xlsx"
+                            target="_blank" class="soal-file-item featured-2026" download>
+                            <div class="soal-file-icon excel"><i class="fa-solid fa-file-excel"></i></div>
+                            <div class="soal-file-info">
+                                <span class="soal-file-name">Soal Gedung Praktikan <span class="badge-new-2026">CIPTA KARYA</span></span>
+                                <span class="soal-file-type">Microsoft Excel • 78 KB • Kasus Konstruksi Bangunan Gedung</span>
+                            </div>
+                            <i class="fa-solid fa-download soal-dl-icon" title="Unduh Berkas"></i>
+                        </a>
+
+                        <a href="Soal Minggu ke 2/Soal Jalan Praktikan.xlsx"
+                            target="_blank" class="soal-file-item featured-2026" download>
+                            <div class="soal-file-icon excel"><i class="fa-solid fa-file-excel"></i></div>
+                            <div class="soal-file-info">
+                                <span class="soal-file-name">Soal Jalan Praktikan <span class="badge-new-2026">BINA MARGA</span></span>
+                                <span class="soal-file-type">Microsoft Excel • 162 KB • Kasus Konstruksi Jalan Raya</span>
+                            </div>
+                            <i class="fa-solid fa-download soal-dl-icon" title="Unduh Berkas"></i>
+                        </a>
+
+                        <a href="Soal Minggu ke 2/Soal Embung Praktikan.xlsx"
+                            target="_blank" class="soal-file-item featured-2026" download>
+                            <div class="soal-file-icon excel"><i class="fa-solid fa-file-excel"></i></div>
+                            <div class="soal-file-info">
+                                <span class="soal-file-name">Soal Embung Praktikan <span class="badge-new-2026">SDA</span></span>
+                                <span class="soal-file-type">Microsoft Excel • 95 KB • Kasus Konstruksi Embung & Irigasi</span>
+                            </div>
+                            <i class="fa-solid fa-download soal-dl-icon" title="Unduh Berkas"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 2: Perhitungan Volume Tulangan (Pembesian) -->
+                <div class="soal-semester-card">
+                    <div class="soal-semester-header minggu2-tulangan">
+                        <i class="fa-solid fa-weight-hanging"></i>
+                        <h3>Volume Tulangan</h3>
+                        <span class="soal-badge">Pembesian (Kg)</span>
+                    </div>
+                    <div class="soal-files">
+                        <a href="Soal Minggu ke 2/Format Soal Perhitungan Volume dalam Kg fixx.xlsx"
+                            target="_blank" class="soal-file-item featured-2026" download>
+                            <div class="soal-file-icon excel"><i class="fa-solid fa-file-excel"></i></div>
+                            <div class="soal-file-info">
+                                <span class="soal-file-name">Format Perhitungan Volume dalam Kg <span class="badge-new-2026">UTAMA</span></span>
+                                <span class="soal-file-type">Microsoft Excel • 322 KB • Template Hitungan Berat Tulangan Fix</span>
+                            </div>
+                            <i class="fa-solid fa-download soal-dl-icon" title="Unduh Berkas"></i>
+                        </a>
+
+                        <a href="Soal Minggu ke 2/Input Volume Tulangan Kg.docx"
+                            target="_blank" class="soal-file-item" download>
+                            <div class="soal-file-icon word"><i class="fa-solid fa-file-word"></i></div>
+                            <div class="soal-file-info">
+                                <span class="soal-file-name">Panduan Input Volume Tulangan Kg</span>
+                                <span class="soal-file-type">Microsoft Word • 20 KB • Petunjuk Pengisian Data Tulangan</span>
+                            </div>
+                            <i class="fa-solid fa-download soal-dl-icon" title="Unduh Berkas"></i>
+                        </a>
+
+                        <a href="Soal Minggu ke 2/Penjabaran Rumus Volume Tulangan.docx"
+                            target="_blank" class="soal-file-item" download>
+                            <div class="soal-file-icon word"><i class="fa-solid fa-file-word"></i></div>
+                            <div class="soal-file-info">
+                                <span class="soal-file-name">Penjabaran Rumus Volume Tulangan</span>
+                                <span class="soal-file-type">Microsoft Word • 21 KB • Rumus & Logika Hitungan Tulangan</span>
+                            </div>
+                            <i class="fa-solid fa-download soal-dl-icon" title="Unduh Berkas"></i>
+                        </a>
+
+                        <a href="Soal Minggu ke 2/Soal Volume Tulangan.dwg"
+                            target="_blank" class="soal-file-item" download>
+                            <div class="soal-file-icon cad"><i class="fa-solid fa-compass-drafting"></i></div>
+                            <div class="soal-file-info">
+                                <span class="soal-file-name">Detail Gambar Volume Tulangan (DWG)</span>
+                                <span class="soal-file-type">AutoCAD Drawing • 315 KB • Detail Penulangan Struktur</span>
+                            </div>
+                            <i class="fa-solid fa-download soal-dl-icon" title="Unduh Berkas"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 3: Perhitungan Volume Pengecoran & Arsitektur -->
+                <div class="soal-semester-card">
+                    <div class="soal-semester-header minggu2-cor">
+                        <i class="fa-solid fa-trowel-bricks"></i>
+                        <h3>Pengecoran & Arsitektur</h3>
+                        <span class="soal-badge">Cor & Keramik</span>
+                    </div>
+                    <div class="soal-files">
+                        <a href="Soal Minggu ke 2/Soal Volume Pengecoran Fix.xlsx"
+                            target="_blank" class="soal-file-item featured-2026" download>
+                            <div class="soal-file-icon excel"><i class="fa-solid fa-file-excel"></i></div>
+                            <div class="soal-file-info">
+                                <span class="soal-file-name">Soal Volume Pengecoran Fix <span class="badge-new-2026">UTAMA</span></span>
+                                <span class="soal-file-type">Microsoft Excel • 86 KB • Template Perhitungan Pengecoran Beton</span>
+                            </div>
+                            <i class="fa-solid fa-download soal-dl-icon" title="Unduh Berkas"></i>
+                        </a>
+
+                        <a href="Soal Minggu ke 2/Input Volume Pengecoran.docx"
+                            target="_blank" class="soal-file-item" download>
+                            <div class="soal-file-icon word"><i class="fa-solid fa-file-word"></i></div>
+                            <div class="soal-file-info">
+                                <span class="soal-file-name">Panduan Input Volume Pengecoran</span>
+                                <span class="soal-file-type">Microsoft Word • 14 KB • Petunjuk Pengisian Data Pengecoran</span>
+                            </div>
+                            <i class="fa-solid fa-download soal-dl-icon" title="Unduh Berkas"></i>
+                        </a>
+
+                        <a href="Soal Minggu ke 2/Volume keramik dan shadow line Fix.xlsx"
+                            target="_blank" class="soal-file-item" download>
+                            <div class="soal-file-icon excel"><i class="fa-solid fa-file-excel"></i></div>
+                            <div class="soal-file-info">
+                                <span class="soal-file-name">Volume Keramik & Shadow Line Fix</span>
+                                <span class="soal-file-type">Microsoft Excel • 296 KB • Hitungan Pekerjaan Pasangan Keramik</span>
+                            </div>
+                            <i class="fa-solid fa-download soal-dl-icon" title="Unduh Berkas"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 4: Gambar Kerja AutoCAD (DWG) -->
+                <div class="soal-semester-card">
+                    <div class="soal-semester-header minggu2-cad">
+                        <i class="fa-solid fa-compass-drafting"></i>
+                        <h3>Gambar Kerja AutoCAD</h3>
+                        <span class="soal-badge">Berkas DWG</span>
+                    </div>
+                    <div class="soal-files">
+                        <a href="Soal Minggu ke 2/Denah Bangunan.dwg"
+                            target="_blank" class="soal-file-item featured-2026" download>
+                            <div class="soal-file-icon cad"><i class="fa-solid fa-compass-drafting"></i></div>
+                            <div class="soal-file-info">
+                                <span class="soal-file-name">Denah Bangunan (AutoCAD DWG)</span>
+                                <span class="soal-file-type">AutoCAD Drawing • 275 KB • Gambar Denah Proyek Gedung</span>
+                            </div>
+                            <i class="fa-solid fa-download soal-dl-icon" title="Unduh Berkas"></i>
+                        </a>
+
+                        <a href="Soal Minggu ke 2/Gambar Potongan DPT.dwg"
+                            target="_blank" class="soal-file-item featured-2026" download>
+                            <div class="soal-file-icon cad"><i class="fa-solid fa-compass-drafting"></i></div>
+                            <div class="soal-file-info">
+                                <span class="soal-file-name">Gambar Potongan DPT (AutoCAD DWG)</span>
+                                <span class="soal-file-type">AutoCAD Drawing • 83 KB • Potongan Dinding Penahan Tanah</span>
+                            </div>
+                            <i class="fa-solid fa-download soal-dl-icon" title="Unduh Berkas"></i>
+                        </a>
+
+                        <a href="Soal Minggu ke 2/Soal Volume Tulangan.dwg"
+                            target="_blank" class="soal-file-item" download>
+                            <div class="soal-file-icon cad"><i class="fa-solid fa-compass-drafting"></i></div>
+                            <div class="soal-file-info">
+                                <span class="soal-file-name">Soal Volume Tulangan (AutoCAD DWG)</span>
+                                <span class="soal-file-type">AutoCAD Drawing • 315 KB • Gambar Detail Tulangan Kasus</span>
+                            </div>
+                            <i class="fa-solid fa-download soal-dl-icon" title="Unduh Berkas"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Soal Praktikum & AHSP Section (Minggu 1) -->
             <div id="soal-ahsp-section" class="section-header" data-aos="fade-up" style="margin-top: 5rem;">
-                <h2>Soal & AHSP Praktikum</h2>
-                <p>Unduh berkas Analisis Harga Satuan Pekerjaan (AHSP) dan kasus konstruksi berdasarkan 3 bidang
+                <h2>Soal & AHSP Praktikum Minggu ke-1</h2>
+                <p>Unduh berkas Analisis Harga Satuan Pekerjaan (AHSP) dan kasus konstruksi WBS & OBS berdasarkan 3 bidang
                     pekerjaan di bawah ini.</p>
             </div>
             <div class="soal-grid" data-aos="fade-up" data-aos-delay="100">

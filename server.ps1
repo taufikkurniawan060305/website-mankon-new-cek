@@ -39,6 +39,8 @@ $mimeTypes = @{
     ".woff2" = "font/woff2"
     ".ttf"   = "font/ttf"
     ".zip"   = "application/zip"
+    ".dwg"   = "application/acad"
+    ".mpp"   = "application/vnd.ms-project"
 }
 
 while ($listener.IsListening) {

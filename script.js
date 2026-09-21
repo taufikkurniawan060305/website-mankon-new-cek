@@ -183,8 +183,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 Rabu: "Rabu, 23 Sep 2026"
             },
             defaultRoom: "Lab Komputer A",
-            link: "#unduhan",
-            linkText: "AHSP Kasus"
+            link: "#soal-minggu-2-section",
+            linkText: "Soal Minggu 2"
         },
         {
             id: 3,

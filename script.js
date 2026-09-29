@@ -196,8 +196,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 Rabu: "Rabu, 30 Sep 2026"
             },
             defaultRoom: "Lab Komputer B",
-            link: "#unduhan",
-            linkText: "Template S"
+            link: "#soal-kurva-s-section",
+            linkText: "Soal Kurva S"
         },
         {
             id: 4,

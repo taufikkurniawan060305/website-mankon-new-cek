@@ -759,6 +759,116 @@ a {
     box-shadow: 0 2px 8px rgba(139, 92, 246, 0.4);
 }
 
+/* Modul Kurva S Styling */
+.soal-semester-header.kurvas-gedung {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.25), rgba(16, 185, 129, 0.08));
+    border-bottom: 2px solid rgba(16, 185, 129, 0.3);
+}
+.soal-semester-header.kurvas-gedung::before {
+    background: #10b981;
+}
+.soal-semester-header.kurvas-gedung i {
+    color: #34d399;
+}
+.soal-semester-header.kurvas-gedung .soal-badge {
+    background: rgba(16, 185, 129, 0.2);
+    color: #34d399;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.soal-semester-header.kurvas-jalan {
+    background: linear-gradient(135deg, rgba(6, 182, 212, 0.25), rgba(6, 182, 212, 0.08));
+    border-bottom: 2px solid rgba(6, 182, 212, 0.3);
+}
+.soal-semester-header.kurvas-jalan::before {
+    background: #06b6d4;
+}
+.soal-semester-header.kurvas-jalan i {
+    color: #22d3ee;
+}
+.soal-semester-header.kurvas-jalan .soal-badge {
+    background: rgba(6, 182, 212, 0.2);
+    color: #22d3ee;
+    border: 1px solid rgba(6, 182, 212, 0.3);
+}
+
+.soal-semester-header.kurvas-embung {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.25), rgba(59, 130, 246, 0.08));
+    border-bottom: 2px solid rgba(59, 130, 246, 0.3);
+}
+.soal-semester-header.kurvas-embung::before {
+    background: #3b82f6;
+}
+.soal-semester-header.kurvas-embung i {
+    color: #60a5fa;
+}
+.soal-semester-header.kurvas-embung .soal-badge {
+    background: rgba(59, 130, 246, 0.2);
+    color: #60a5fa;
+    border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.badge-kurva-s {
+    display: inline-block;
+    padding: 0.18rem 0.55rem;
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: #0a192f;
+    background: linear-gradient(135deg, #06b6d4, #10b981);
+    border-radius: 9999px;
+    margin-left: 0.45rem;
+    letter-spacing: 0.5px;
+    vertical-align: middle;
+    box-shadow: 0 2px 8px rgba(6, 182, 212, 0.4);
+}
+
+.section-tag-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(16, 185, 129, 0.12);
+    border: 1px solid rgba(16, 185, 129, 0.35);
+    color: #34d399;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 0.35rem 0.85rem;
+    border-radius: 50px;
+    margin-bottom: 0.8rem;
+}
+.section-tag-badge .pulse-dot {
+    background: #10b981;
+    box-shadow: 0 0 10px #10b981;
+}
+
+.soal-card-desc {
+    padding: 1.2rem 1.5rem 0.6rem;
+    color: var(--text-muted);
+    font-size: 0.88rem;
+    line-height: 1.5;
+}
+
+.card.card-featured-highlight {
+    border: 1px solid rgba(6, 182, 212, 0.5);
+    background: linear-gradient(180deg, rgba(10, 25, 47, 0.95), rgba(6, 182, 212, 0.08));
+    position: relative;
+    box-shadow: 0 10px 30px rgba(6, 182, 212, 0.15);
+}
+.card.card-featured-highlight::after {
+    content: 'TERBARU';
+    position: absolute;
+    top: 12px;
+    right: 14px;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    background: linear-gradient(135deg, #06b6d4, #10b981);
+    color: #0a192f;
+    padding: 0.15rem 0.5rem;
+    border-radius: 9999px;
+    box-shadow: 0 2px 8px rgba(6, 182, 212, 0.4);
+}
+
 .soal-semester-header i {
     font-size: 2.2rem;
 }

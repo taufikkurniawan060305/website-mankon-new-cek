@@ -79,14 +79,18 @@ while ($listener.IsListening) {
             $bytes = [System.IO.File]::ReadAllBytes($filePath)
             $response.ContentLength64 = $bytes.Length
             $response.StatusCode = 200
-            $response.OutputStream.Write($bytes, 0, $bytes.Length)
+            if ($request.HttpMethod -ne "HEAD") {
+                $response.OutputStream.Write($bytes, 0, $bytes.Length)
+            }
         } else {
             $response.StatusCode = 404
             $notFoundHtml = "<html><body><h1>404 Not Found</h1><p>File not found: $([System.Web.HttpUtility]::HtmlEncode($decodedPath))</p></body></html>"
             $msg = [System.Text.Encoding]::UTF8.GetBytes($notFoundHtml)
             $response.ContentType = "text/html; charset=utf-8"
             $response.ContentLength64 = $msg.Length
-            $response.OutputStream.Write($msg, 0, $msg.Length)
+            if ($request.HttpMethod -ne "HEAD") {
+                $response.OutputStream.Write($msg, 0, $msg.Length)
+            }
         }
         $response.OutputStream.Close()
     } catch {

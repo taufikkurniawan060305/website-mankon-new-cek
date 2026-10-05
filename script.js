@@ -202,15 +202,15 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             id: 4,
             title: "Tutorial Pengaturan Awal Penggunaan Ms. Project",
-            tags: ["Ms. Project", "Setup Kalender"],
+            tags: ["Ms. Project", "Setup Kalender", "Soal Minggu 4"],
             dates: {
                 Senin: "Senin, 05 Okt 2026",
                 Selasa: "Selasa, 06 Okt 2026",
                 Rabu: "Rabu, 07 Okt 2026"
             },
             defaultRoom: "Lab Komputer A",
-            link: "#tutorial",
-            linkText: "Tutorial 1"
+            link: "#soal-minggu-4-section",
+            linkText: "Soal Minggu 4"
         },
         {
             id: 5,

@@ -202,7 +202,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             id: 4,
             title: "Tutorial Pengaturan Awal Penggunaan Ms. Project",
-            tags: ["Ms. Project", "Setup Kalender", "Soal Minggu 4"],
+            tags: ["Ms. Project", "Setup Kalender", "Video Tutorial", "Soal Minggu 4"],
             dates: {
                 Senin: "Senin, 05 Okt 2026",
                 Selasa: "Selasa, 06 Okt 2026",
@@ -210,7 +210,8 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             defaultRoom: "Lab Komputer A",
             link: "#soal-minggu-4-section",
-            linkText: "Soal Minggu 4"
+            linkText: "Soal Minggu 4",
+            videoLink: "#tutorial-msproject"
         },
         {
             id: 5,
@@ -379,7 +380,10 @@ document.addEventListener('DOMContentLoaded', () => {
                             </td>
                             <td><span class="time-pill"><i class="fa-regular fa-clock"></i> Sesuai Jam Kelas</span></td>
                             <td><span class="room-badge"><i class="fa-solid fa-desktop"></i> ${module.defaultRoom}</span></td>
-                            <td class="cell-center"><a href="${module.link}" class="table-action-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> ${module.linkText}</a></td>
+                            <td class="cell-center">
+                                <a href="${module.link}" class="table-action-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> ${module.linkText}</a>
+                                ${module.videoLink ? `<a href="${module.videoLink}" class="table-action-link" style="margin-left: 5px; color: #f87171; border-color: rgba(239, 68, 68, 0.4); background: rgba(239, 68, 68, 0.1);" title="Tonton Video Tutorial MS Project"><i class="fa-brands fa-youtube" style="color: #ef4444;"></i> Video</a>` : ''}
+                            </td>
                         </tr>
                     `;
                 }
@@ -441,7 +445,10 @@ document.addEventListener('DOMContentLoaded', () => {
                             </td>
                             <td><span class="time-pill"><i class="fa-regular fa-clock"></i> ${classInfo.time}</span></td>
                             <td><span class="room-badge"><i class="fa-solid fa-desktop"></i> ${classInfo.room}</span></td>
-                            <td class="cell-center"><a href="${module.link}" class="table-action-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> ${module.linkText}</a></td>
+                            <td class="cell-center">
+                                <a href="${module.link}" class="table-action-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> ${module.linkText}</a>
+                                ${module.videoLink ? `<a href="${module.videoLink}" class="table-action-link" style="margin-left: 5px; color: #f87171; border-color: rgba(239, 68, 68, 0.4); background: rgba(239, 68, 68, 0.1);" title="Tonton Video Tutorial MS Project"><i class="fa-brands fa-youtube" style="color: #ef4444;"></i> Video</a>` : ''}
+                            </td>
                         </tr>
                     `;
                 }

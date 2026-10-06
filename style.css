@@ -1594,10 +1594,13 @@ footer {
     border: 1px solid rgba(6, 182, 212, 0.3);
 }
 
-.main-video-player video {
+.main-video-player video,
+.main-video-player iframe {
     width: 100%;
+    aspect-ratio: 16 / 9;
     height: auto;
     display: block;
+    border: none;
     border-radius: 14px;
     outline: none;
 }

@@ -202,7 +202,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             id: 4,
             title: "Tutorial Pengaturan Awal Penggunaan Ms. Project",
-            tags: ["Ms. Project", "Setup Kalender", "Video Tutorial", "Soal Minggu 4"],
+            tags: ["Ms. Project", "Setup Kalender", "Video Tutorial", "Soal Minggu 4 (Revisi)"],
             dates: {
                 Senin: "Senin, 05 Okt 2026",
                 Selasa: "Selasa, 06 Okt 2026",
@@ -210,21 +210,22 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             defaultRoom: "Lab Komputer A",
             link: "#soal-minggu-4-section",
-            linkText: "Soal Minggu 4",
+            linkText: "Soal Revisi",
             videoLink: "#tutorial-msproject"
         },
         {
             id: 5,
             title: "Tutorial Pembuatan Kerangka Kerja (Gantt Chart) di Ms. Project",
-            tags: ["Ms. Project", "Gantt Chart", "WBS Entry"],
+            tags: ["Ms. Project", "Gantt Chart", "WBS Entry", "Video Minggu 5"],
             dates: {
                 Senin: "Senin, 12 Okt 2026",
                 Selasa: "Selasa, 13 Okt 2026",
                 Rabu: "Rabu, 14 Okt 2026"
             },
             defaultRoom: "Lab Komputer A",
-            link: "#tutorial",
-            linkText: "Tutorial 2"
+            link: "#soal-minggu-4-section",
+            linkText: "Soal Revisi",
+            videoLink: "#tutorial-msproject-2"
         },
         {
             id: 6,

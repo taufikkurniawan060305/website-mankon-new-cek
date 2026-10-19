@@ -915,6 +915,20 @@ a {
     box-shadow: 0 2px 8px rgba(139, 92, 246, 0.4);
 }
 
+.badge-minggu-6 {
+    display: inline-block;
+    padding: 0.18rem 0.55rem;
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: #ffffff;
+    background: linear-gradient(135deg, #06b6d4, #0284c7);
+    border-radius: 9999px;
+    margin-left: 0.45rem;
+    letter-spacing: 0.5px;
+    vertical-align: middle;
+    box-shadow: 0 2px 8px rgba(6, 182, 212, 0.45);
+}
+
 .badge-revisi {
     display: inline-block;
     padding: 0.18rem 0.55rem;

@@ -230,41 +230,44 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             id: 6,
             title: "Tutorial Input Kebutuhan Resource & Menentukan Predecessors pada Microsoft Project",
-            tags: ["Ms. Project", "Resources", "Predecessors"],
+            tags: ["Ms. Project", "Resources", "Predecessors", "Video Minggu 6"],
             dates: {
                 Senin: "Senin, 19 Okt 2026",
                 Selasa: "Selasa, 20 Okt 2026",
                 Rabu: "Rabu, 21 Okt 2026"
             },
             defaultRoom: "Lab Komputer B",
-            link: "#tutorial",
-            linkText: "Tutorial 3"
+            link: "#contoh-laporan-section",
+            linkText: "Contoh Laporan",
+            videoLink: "#tutorial-msproject-3"
         },
         {
             id: 7,
             title: "Tutorial Pengontrolan Pekerjaan, Baseline & Progressline di Ms. Project",
-            tags: ["Ms. Project", "Baseline", "Progress"],
+            tags: ["Ms. Project", "Baseline", "Progress", "Video Minggu 6"],
             dates: {
                 Senin: "Senin, 26 Okt 2026",
                 Selasa: "Selasa, 27 Okt 2026",
                 Rabu: "Rabu, 28 Okt 2026"
             },
             defaultRoom: "Lab Komputer A",
-            link: "#tutorial",
-            linkText: "Tutorial 4"
+            link: "#contoh-laporan-section",
+            linkText: "Contoh Laporan",
+            videoLink: "#tutorial-msproject-3"
         },
         {
             id: 8,
             title: "Tutorial Penyusunan Report Sebuah Proyek di Ms. Project",
-            tags: ["Ms. Project", "Project Report"],
+            tags: ["Ms. Project", "Project Report", "Video Minggu 6"],
             dates: {
                 Senin: "Senin, 02 Nov 2026",
                 Selasa: "Selasa, 03 Nov 2026",
                 Rabu: "Rabu, 04 Nov 2026"
             },
             defaultRoom: "Lab Komputer A",
-            link: "#tutorial",
-            linkText: "Tutorial 5"
+            link: "#contoh-laporan-section",
+            linkText: "Contoh Laporan",
+            videoLink: "#tutorial-msproject-3"
         },
         {
             id: 9,
